@@ -1,0 +1,5 @@
+CREATE table marks1(regno INT(100) PRIMARY KEY, name varchar(100) NOT NULL, cse INTEGER, mec INTEGER, ece INTEGER, arts INTEGER, total_marks INTEGER, percent_marks INTEGER);
+insert into marks1(regno,name,cse,mec,ece,arts) values(1,"one",85,69,75,88),(2,"two",57,79,82,67),(3,"three",58,99,82,49)(4,"four",59,77,61,95);
+update marks1 set total_marks = cse+mec+ece+arts;
+update marks1 set percent_marks = total_marks/4;
+select * from marks1;
